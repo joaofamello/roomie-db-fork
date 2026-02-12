@@ -8,9 +8,9 @@ INSERT INTO estudante (id_estudante, curso, instituicao) VALUES
 (3, 'Agronomia', 'UFAPE');
 
 INSERT INTO telefone (id_usuario, numero) VALUES
-(1, '(87) 99999-0001'),
-(2, '(87) 99999-0002'),
-(3, '(87) 99999-0003');
+(1, '87999990001'),
+(2, '87999990002'),
+(3, '87999990003');
 
 INSERT INTO habito (id_estudante, horario_estudo) VALUES
 (2, 'NOITE'),
