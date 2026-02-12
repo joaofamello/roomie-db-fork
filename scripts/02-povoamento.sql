@@ -1,7 +1,7 @@
-INSERT INTO usuario (nome, email, senha, genero) VALUES
-('Carlos Proprietário', 'carlos@roomie.com', '123456', 'Masculino'),
-('Ana Estudante', 'ana@ufape.edu.br', '123456', 'Feminino'),
-('Marcos Calouro', 'marcos@ufape.edu.br', '123456', 'Masculino');
+INSERT INTO usuario (nome, email, cpf, senha, genero) VALUES
+('Carlos Proprietário', 'carlos@roomie.com', '07297022004', '$2a$10$N.zmdr9k7uOCQb376NoUnutj8iAt6aBECYnzhO99ZjYd5x7of5w0m', 'MASCULINO'),
+('Ana Estudante', 'ana@ufape.edu.br', '21426363060', '$2a$10$N.zmdr9k7uOCQb376NoUnutj8iAt6aBECYnzhO99ZjYd5x7of5w0m', 'FEMININO'),
+('Marcos Calouro', 'marcos@ufape.edu.br', '62132436070', '$2a$10$N.zmdr9k7uOCQb376NoUnutj8iAt6aBECYnzhO99ZjYd5x7of5w0m', 'MASCULINO');
 
 INSERT INTO estudante (id_estudante, curso, instituicao) VALUES
 (2, 'Ciência da Computação', 'UFAPE'),
@@ -13,8 +13,8 @@ INSERT INTO telefone (id_usuario, numero) VALUES
 (3, '(87) 99999-0003');
 
 INSERT INTO habito (id_estudante, horario_estudo) VALUES
-(2, 'Noite'),
-(3, 'Manhã');
+(2, 'NOITE'),
+(3, 'MANHÃ');
 
 INSERT INTO estilo_vida (id_habito, estilo) VALUES
 (1, 'Calmo'),
@@ -44,7 +44,7 @@ INSERT INTO imagem_imovel (id_imovel, caminho_imagem) VALUES
 (2, '/imagens/casas/frente_casa.jpg');
 
 INSERT INTO contrato_locacao (id_imovel, id_estudante, id_proprietario, data_inicio, data_fim, valor_aluguel, status_contrato) VALUES
-(1, 2, 1, '2026-03-01', '2026-09-01', 600.00, 'Ativo');
+(1, 2, 1, '2026-03-01', '2026-09-01', 600.00, 'ATIVO');
 
 INSERT INTO avaliacao_imovel (id_imovel, id_estudante, nota, comentario) VALUES
 (1, 2, 5, 'Excelente apartamento, muito confortável e bem localizado. Recomendo!');

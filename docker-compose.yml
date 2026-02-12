@@ -2,19 +2,22 @@ services:
   db:
     build: .
     image: roomie-database:latest
-
-    restart: always 
-    
+    container_name: roomie-db
+    restart: always
     environment:
       POSTGRES_USER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_DB: ${DB_NAME}
-    
     volumes:
       - db_data:/var/lib/postgresql/data
-      
     ports:
       - "${DB_PORT}:5432"
+    networks:
+      - roomie-net
 
 volumes:
   db_data:
+
+networks:
+  roomie-net:
+    external: true
