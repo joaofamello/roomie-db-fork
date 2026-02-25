@@ -88,6 +88,7 @@ CREATE TABLE imovel(
     preco DECIMAL(10, 2) NOT NULL,
     genero_moradores tipo_genero NOT NULL,
     aceita_animais BOOLEAN DEFAULT FALSE,
+    tem_garagem BOOLEAN DEFAULT FALSE,
     vagas_disponiveis INT NOT NULL DEFAULT 1,
     status status_anuncio NOT NULL DEFAULT 'DRAFT',  
 
